@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --main-color: #fff;
+    --other-color: #ff0000;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient( rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url('./photo-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body h1{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+h2{
+    color: var(--other-color);
+    text-transform: capitalize;
+}
+main{
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.spnQtd{
+    text-align: end;
+}
+.answers{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+button{
+    width: 100%;
+    text-align: start;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--other-color);
+    color: var(--main-color);
+}
+.finish{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+.finish button{
+    text-align: center;
+}
+footer{
+    display: flex;
+    padding: 5px;
+    text-align: justify;
+}
+footer p{
+    margin: 0 10px;
+    color: var(--main-color);
+}
